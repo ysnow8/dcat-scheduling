@@ -1,0 +1,32 @@
+{
+    "name": "ysnow/scheduling",
+    "alias": "",
+    "description": "dcatadmin 任务调度",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/ysnow/scheduling",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ysnow",
+            "email": "ysnow888@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ysnow\\Scheduling\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Ysnow\\Scheduling\\SchedulingServiceProvider",
+        "laravel": {
+            "providers": [
+                "Ysnow\\Scheduling\\SchedulingServiceProvider"
+            ]
+        }
+    }
+}
